@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'CheltenhamStdBold';
+  src: url('CheltenhamStdBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'CheltenhamStdLightCond';
+  src: url('CheltenhamStdLightCond.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'CheltenhamStdUltra';
+  src: url('CheltenhamStdUltra.woff') format('woff');
+}
+
+@font-face {
+  font-family: "CheltenhamStdBook";
+  src: url('CheltenhamStdBook.woff') format('woff');
+}
+
+body {
+  background-color: #555;
+}
+
+.dev {
+  text-align: center;
+  padding: 10px;
+}
+
+.mati {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.container {
+  margin: auto;
+  width: 600px;
+  height: 550px;
+  border: 1px solid #d9d9d9;
+  background-color: #ebedf0;
+  border-radius: 15px;
+}
+
+.mpc-deco {
+  margin-left: 10px;
+  width: 40%;
+  height: 110px;
+  overflow: hidden;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-title {
+  font-family: 'CheltenhamStdLightCond', sans-serif;
+  font-size: 42px;
+  color: #ab261d;
+  margin: 0;
+  padding-top: 5px;
+}
+
+.Subtitle {
+  font-family: 'CheltenhamStdLightCond', sans-serif;
+  color: #555;
+  font-size: 20px;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.knob-grid {
+  margin-top: 20px;
+  overflow: hidden;
+  width: 58%;
+  height: 90px;
+  float: right;
+}
+
+.slider {
+  margin-top: 7px;
+  float: right;
+}
+
+.slider-text {
+  font-family: "CheltenhamStdUltra", sans-serif;
+  float: right;
+  width: 40%;
+  font-size: 14px;
+  opacity: 80%;
+  margin-right: 7px;
+  border-radius: 5px;
+  background-color: rgb(238, 224, 197);
+}
+
+.knob {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #9c2b23;
+  border: 2px solid #555;
+  border-radius: 50%;
+  top: 10px;
+  right: 10px;
+}
+
+.mpc-grid {
+  margin: auto;
+  margin-top: 85px;
+  width: 392px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.mpc-button {
+  font-family: "CheltenhamStdBook", sans-serif;
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  background-color: #333;
+  border: 2px solid #555;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  cursor: pointer;
+  padding-left: 3px;
+}
+
+.mpc-button:nth-child(odd) {
+  background-color: #444;
+}
+
+.mpc-button:hover {
+  background-color: brown;
+  color: white;
+}
+
+.mpc-button.active {
+  background-color: white;
+  color: red;
+}
+
+#stop-button.active-keydown {
+  background-color: rgb(82, 6, 22);
+  color: white;
+}
+
+#stop-button.active-hover {
+  background-color: brown;
+  color: white;
+}
