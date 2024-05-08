@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function() {
     const buttons = document.querySelectorAll(".mpc-button");
     const playbackRateSlider = document.getElementById("playbackRateSlider");
@@ -61,8 +60,13 @@ function stopAllSounds() {
     currentlyPlayingSounds.clear();
 }
 
-
-
+function stopSounds() {
+currentlyPlayingSounds.forEach(function(audioInstance) {
+    audioInstance.pause();
+    audioInstance.currentTime = 0;
+});
+currentlyPlayingSounds.clear();
+}
 
 const stopButton = document.getElementById("stop-button");
 stopButton.addEventListener("mouseover", function() {
@@ -163,13 +167,3 @@ knob3Button.addEventListener("mousedown", function() {
     sound3Player.start(); // Use sound3Player here
 });
 });
-
-
-
-
-
-
-
-
-
-
