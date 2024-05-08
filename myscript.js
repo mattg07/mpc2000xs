@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function() {
     const buttons = document.querySelectorAll(".mpc-button");
     const playbackRateSlider = document.getElementById("playbackRateSlider");
@@ -17,8 +18,8 @@ document.addEventListener("DOMContentLoaded", function() {
         "Digit1": "sound13",
         "Digit2": "sound14",
         "Digit3": "sound15",
-        "Digit4": "stopAllSounds" 
-    
+        "Digit4": "stopAllSounds" // Update to use "Digit4" here
+    };
 
     const keysPressed = new Set();
     buttons.forEach(function(button) {
@@ -164,6 +165,15 @@ sound3Player.connect(pingPongDelay); // Connect to the PingPongDelay effect
 
 const knob3Button = document.getElementById("knob3");
 knob3Button.addEventListener("mousedown", function() {
-    sound3Player.start(); // Use sound3Player here
+    sound3Player.start(); // Use sound3Player her
 });
 });
+
+
+
+
+
+
+
+
+
