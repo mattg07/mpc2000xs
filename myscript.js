@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", function() {
         "Digit1": "sound13",
         "Digit2": "sound14",
         "Digit3": "sound15",
-        "Digit4": "stopAllSounds" // Update to use "Digit4" here
-    };
+        "Digit4": "stopAllSounds" 
+    
 
     const keysPressed = new Set();
     buttons.forEach(function(button) {
