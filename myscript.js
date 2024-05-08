@@ -61,13 +61,19 @@ function stopAllSounds() {
     currentlyPlayingSounds.clear();
 }
 
-function stopSounds() {
-currentlyPlayingSounds.forEach(function(audioInstance) {
-    audioInstance.pause();
-    audioInstance.currentTime = 0;
+// Call stopAllSounds function on keydown event for "Digit4" key
+document.addEventListener("keydown", function(event) {
+    if (event.code === "Digit4") {
+        stopAllSounds();
+    }
 });
-currentlyPlayingSounds.clear();
-}
+
+// Call stopAllSounds function when the button with ID "Digit4" is clicked
+const stopButton = document.getElementById("Digit4");
+stopButton.addEventListener("click", function() {
+    stopAllSounds(); 
+});
+
 
 const stopButton = document.getElementById("stop-button");
 stopButton.addEventListener("mouseover", function() {
